@@ -1,0 +1,8 @@
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"  # Mapea el puerto 8080 de tu máquina al puerto 80 del contenedor
+    volumes:
+      - ./src:/usr/share/nginx/html # Mapea el directorio src al directorio HTML de NGINX
+
